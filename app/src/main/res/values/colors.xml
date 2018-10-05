@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2c86f8</color>
+    <color name="colorPrimaryDark">#1F6EDA</color>
+    <color name="colorAccent">#0039A7</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="colorPrimaryLightDark">#1f6eda</color>
+
+    //Mightier theme colors
+    <color name="charcoalGrey">#4E545F</color>
+    <color name="darkGrey">#7D8592</color>
+    <color name="mediumGrey">#A8AEB7</color>
+    <color name="lightGrey">#E8EBEF</color>
+    <color name="offWhite">#F5F7FA</color>
+
+    <color name="intenseBlue">#002469</color>
+    <color name="darkBlue">#0A00A7</color>
+    <color name="mediumBlue">#0039A7</color>
+    <color name="brightBlue">#1F6EDA</color>
+    <color name="lightBlue">#2c86f8</color>
+
+    <color name="brightGreen">#6AE28A</color>
+    <color name="mediumGreen">#5ABE75</color>
+    <color name="brightRed">#FC6C6F</color>
+    <color name="mediumRed">#DD5356</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="grey_mid">#7d8592</color>
+    <color name="grey_dark">#373737</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#e8e8e8</color>
+    <color name="green">#2ba94c</color>
+
+
+    <color name="colorH1">#4E545F</color>
+    <color name="colorH2">#4A4A4A</color>
+    <color name="colorHint">#30000000</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="white_overlay">#66FFFFFF</color>
+
+    <color name="border_color">#d7d7d7</color>
+    <color name="bright_blue">#8bacce</color>
+    <color name="bright_blue_opacity">#308bacce</color>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.resocoder.timertutorial.TimerActivity"
+    tools:showIn="@layout/activity_timer">
+
+    <FrameLayout
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:background="@drawable/circle_shape"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            style="@style/Widget.MaterialProgressBar.CustomProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:progress="100"
+            android:progressBackgroundTint="@color/lightGrey"
+            android:progressDrawable="@drawable/circle_progress_background" />
+
+        <ProgressBar
+            android:id="@+id/progress_countdown"
+            style="@style/Widget.MaterialProgressBar.CustomProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rotation="-90"
+            tools:progress="60"
+            android:background="@drawable/circle_shape"
+            android:progressDrawable="@drawable/circle_progress_foreground" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Activate After"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_countdown"
+        app:layout_constraintEnd_toEndOf="@+id/textView_countdown"
+        app:layout_constraintStart_toStartOf="@+id/textView_countdown"
+        app:layout_goneMarginBottom="16dp" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textView_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10:00" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Minutes"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_countdown"
+        app:layout_constraintTop_toBottomOf="@+id/textView_countdown" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8sp"
+        android:text="Seconds"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_countdown"
+        app:layout_constraintTop_toBottomOf="@+id/textView_countdown" />
+
+
+</android.support.constraint.ConstraintLayout>
